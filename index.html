@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUTORIAL POINT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* header {
+            background-color: #2c3e50; 
+            color: #ecf0f1;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        } */
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #3498db; /* Blue */
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 40px;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #2980b9; /* Darker Blue */
+        }
+
+        main {
+            margin-top: 80px;
+            margin-left: 250px; /* Adjust based on your sidebar width */
+            padding: 20px;
+        }
+
+        aside {
+            background-color: #eee;
+            position: fixed;
+            width: 200px;
+            height: 100%;
+            overflow: auto;
+            padding: 20px;
+            list-style-type: none;
+        }
+        .GIT_TUTORIAL {
+            list-style-type: none;
+            margin-bottom: 20px;
+        }
+
+        .GIT_TUTORIAL h3 {
+            color: #070707;
+            margin-bottom: 10px;
+        }
+
+        .GIT_TUTORIAL a {
+            color: #40b4d0; /* Light Grey */
+            text-decoration: none;
+            display: block;
+            padding: 8px 0;
+        }
+
+        .GIT_TUTORIAL a:hover {
+            background-color: #34495e; /* Dark Blue-Grey on hover */
+        }
+       
+        /* Add your own styles for the poster above the nav bar */
+
+        /* Add styles for the rest of your content */
+    </style>
+    <b:skin>
+        <![CDATA[
+          /* Your CSS styles go here */
+        ]]>
+    </b:skin>
+</head>
+<body>
+    <!-- <header>
+       
+        <h1>Your Blogger Website</h1>
+    </header> -->
+    
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#embedded">Embedded</a>
+        <a href="#git">GIT</a>
+        <a href="#bonobo">Bonobo</a>
+        <a href="#error">Error</a>
+    </nav>
+    <b:section class='main' id='main'/>
+    <aside>
+        <!-- Add your sidebar content here -->
+        <!-- <div class="GIT_TUTORIAL">
+            <br>
+            <h3>GIT TUTORIAL</h3>
+            <li>Git Intro</li>
+            <li>Git SetUp</li>
+            <li>Git Configure</li>
+            <li>Git Stats</li>
+            <li>Git Basic Commands</li>
+            <br>
+        </div>
+
+        <div class="GIT_TUTORIAL">
+            <h3>Git and Bonobo Server</h3>
+            <li>Git and Bonobo diff</li>
+            <li>Bonobo Setup</li>
+            <li>Bonobo UI</li>
+        </div>
+        <div class="GIT_TUTORIAL">
+            <h3>Git Branch</h3>
+            <li>Git Branch</li>
+            <li>Branch list</li>
+            <li>Create New Branch</li>
+            <li>Delete Branch</li>
+            <li>Branch Checkout</li>
+        </div>
+        <div class="GIT_TUTORIAL">
+            <h3>Push Code on Bonobo Server</h3>
+            <li>Push Code</li>
+        </div>
+        <div class="GIT_TUTORIAL">
+            <h3>Clone Code from Bonobo Server</h3>
+            <li>clone code</li>
+        </div>
+        <div class="GIT_TUTORIAL">
+            <h3>Merge Code</h3>
+            <li>Merge code</li>
+            <li>Conflict Merge</li>
+        </div>
+        <div class="GIT_TUTORIAL">
+            <h3>Git Command List</h3>
+        </div> -->
+        <div class="GIT_TUTORIAL">
+            <h3>GIT TUTORIAL</h3>
+            <a href="#git-intro">Git Intro</a>
+            <a href="#git-setup">Git SetUp</a>
+            <a href="#git-configure">Git Configure</a>
+            <a href="#git-stats">Git Stats</a>
+            <a href="#git-commands">Git Basic Commands</a>
+        </div>
+
+        <div class="GIT_TUTORIAL">
+            <h3>Git and Bonobo Server</h3>
+            <a href="#git-bonobo-diff">Git and Bonobo diff</a>
+            <a href="#bonobo-setup">Bonobo Setup</a>
+            <a href="#bonobo-ui">Bonobo UI</a>
+        </div>
+
+        <div class="GIT_TUTORIAL">
+            <h3>Git Branch</h3>
+            <a href="#git-branch">Git Branch</a>
+            <a href="#branch-list">Branch list</a>
+            <a href="#create-branch">Create New Branch</a>
+            <a href="#delete-branch">Delete Branch</a>
+            <a href="#branch-checkout">Branch Checkout</a>
+        </div>
+
+        <div class="GIT_TUTORIAL">
+            <h3>Push Code on Bonobo Server</h3>
+            <a href="#push-code">Push Code</a>
+        </div>
+
+        <div class="GIT_TUTORIAL">
+            <h3>Clone Code from Bonobo Server</h3>
+            <a href="#clone-code">Clone code</a>
+        </div>
+
+        <div class="GIT_TUTORIAL">
+            <h3>Merge Code</h3>
+            <a href="#merge-code">Merge code</a>
+            <a href="#conflict-merge">Conflict Merge</a>
+        </div>
+
+        <div class="GIT_TUTORIAL">
+            <h3>Git Command List</h3>
+        </div>
+    </aside>
+
+    <main>
+        <!-- Add your main content here -->
+        <h1>GIT</h1>
+        <p>Git is a version control System. Version Control Sysytem is a tools that helps to track changes in code.</p>
+
+    </main>
+</body>
+</html>
